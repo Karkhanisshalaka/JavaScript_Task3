@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color_Box</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+      }
+      #Color_Box {
+        height: 20dvh;
+        width: 20dvh;
+        border: solid 1px black;
+        padding: 10%;
+        margin: 5rem;
+      }
+
+      button {
+        height: 2em;
+        width: 10vmax;
+        font-size: 0.9em;
+        border: solid 1px black;
+        background-color: #124561;
+        align-items: center;
+        border-radius: 25px;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="Color_Box"></div>
+
+    <div class="button">
+      <button onclick="red()">Red</button>
+      <button onclick="green()">Green</button>
+      <button onclick="yellow()">Yellow</button>
+    </div>
+
+    <script>
+      function red() {
+        var element = document.getElementById("Color_Box");
+        element.style.backgroundColor = "red";
+      }
+      function green() {
+        var element2 = document.getElementById("Color_Box");
+        element2.style.backgroundColor = "green";
+      }
+      function yellow() {
+        var element3 = document.getElementById("Color_Box");
+        element3.style.backgroundColor = "yellow";
+      }
+    </script>
+  </body>
+</html>
